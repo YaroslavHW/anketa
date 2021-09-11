@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		анкета
+	</title>
+</head>
+<body>
+	<form action="#">
+		<h1>
+			Анкета ученика
+		</h1>
+		<fieldset>
+			<legend> контакная информация</legend>
+			<input type="text" placeholder="введите имя">
+			<br>
+			<input type="number" placeholder="введите номер телефона">
+			<br>
+			<input type="email" placeholder="введите email">
+		</fieldset>
+		<fieldset>
+			<legend> личная информация</legend>
+			<label for="age"> ваш возраст</label>
+			<input id="age" type="number">
+			<label for="rul"> дата рождения</label>
+			<input id="rul" type="date">
+			<label for="tac"> по какому курсу занимаетесь</label>
+			<select id="tac">
+				<option>
+					Scratch
+				</option>
+				<option>
+					web
+				</option>
+				<option>
+					python
+				</option>
+				<option>
+					c++
+				</option>
+				<option>
+					unity
+				</option>
+				<option>
+					design
+				</option>
+			</select>
+		</fieldset>
+		<fieldset> 
+			<legend> Обратная связь</legend>
+			<label> Посоветуете ли Вы нас друзьям?</label>
+			<input id="checked1"  type="radio" name="feedback">
+			<label class="radio" for="checked1"> Да</label>
+			<input id="checked2" type="radio" name="feedback">
+			<label class="radio" for="checked2"> Конечно</label>
+			<input id="checked3" type="radio" name="feedback">
+			<label class="radio" for="checked3"> Разве могут быть другие варианты?</label>
+			<label> Оставьте комментарий :)</label>
+			<textarea></textarea>
+		</fieldset>
+		<input id="raun" type="checkbox" name="">
+		<label class="box" for="raun"> Разрешить обработку данных </label>
+		<input id="raun1" type="checkbox" name="">
+		<label class="box" for="raun1"> Отправлять новости на почту </label>
+		<input type="submit" value="Отправить">
+	</form>
+</body>
+</html>
